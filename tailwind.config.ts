@@ -57,6 +57,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "role-admin": {
+          DEFAULT: "hsl(var(--role-admin))",
+          foreground: "hsl(var(--role-admin-foreground))",
+        },
+        "role-manager": {
+          DEFAULT: "hsl(var(--role-manager))",
+          foreground: "hsl(var(--role-manager-foreground))",
+        },
+        "role-employee": {
+          DEFAULT: "hsl(var(--role-employee))",
+          foreground: "hsl(var(--role-employee-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +81,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
